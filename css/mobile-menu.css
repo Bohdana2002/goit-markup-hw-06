@@ -1,0 +1,112 @@
+/* Hide the checkbox */
+.menu-toggle-input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.mobile-menu {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        gap: 121px;
+    }
+
+    @media screen and (max-width: 767px) {
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        padding: 72px 16px 40px;
+        transform: translateX(100%);
+        z-index: 200;
+
+        background-color: rgb(255, 255, 255);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    @media screen and (min-width: 1158px) {
+        gap: 332px;
+    }
+}
+
+/* CSS-only open: checkbox is direct sibling of .mobile-menu inside .header-container */
+@media screen and (max-width: 767px) {
+    .menu-toggle-input:checked ~ .mobile-menu {
+        transform: translateX(0);
+    }
+}
+
+.mobile-menu-open-btn {
+    display: flex;
+    padding: 0;
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.burger-image {
+    fill: rgb(47, 47, 55);
+}
+
+.mobile-menu .social {
+    justify-content: flex-start;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.mobile-menu-close-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #e7e9fc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.mobile-menu-close-btn:hover,
+.mobile-menu-close-btn:focus {
+    background-color: #404bbf;
+    border: none;
+}
+
+.mobile-menu-close-btn > svg,
+.mobile-menu-close-btn .modal-close-icon {
+    fill: #2e2f42;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu-close-btn:hover .modal-close-icon,
+.mobile-menu-close-btn:focus .modal-close-icon {
+    fill: #ffffff;
+}

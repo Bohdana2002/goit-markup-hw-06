@@ -1,0 +1,217 @@
+.low-part {
+    background-color: rgb(46, 47, 66);
+    padding-top: 96px;
+    padding-bottom: 96px;
+
+    @media screen and (min-width: 1158px) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 72px;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: baseline;
+        column-gap: 24px;
+        padding: 0 108px;
+    }
+
+    @media screen and (min-width: 1158px) {
+        padding: 0 15px;
+        column-gap: 0px;
+    }
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+        align-items: flex-start;
+    }
+
+    @media screen and (min-width: 1158px) {
+        margin-right: 120px;
+    }
+}
+
+.footer-scial-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+        align-items: flex-start;
+    }
+
+    @media screen and (min-width: 1158px) {
+        margin-right: auto;
+    }
+}
+.social-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: rgb(255, 255, 255);
+    margin-bottom: 16px;
+
+    @media screen and (max-width: 767px) {
+            text-align: center;
+        }
+}
+
+.footer-icons {
+    gap: 16px;
+}
+
+.footer-par {
+    color: var(--footer-text-color);
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    max-width: 264px;
+}
+.social-links-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(77, 90, 229);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-links-footer:hover,
+.social-links-footer:focus {
+    background-color: rgb(49, 208, 170);
+}
+.low-studio {
+    color: var(--footer-text-color);
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.footer-logo {
+    display: block; 
+    margin-bottom: 16px;
+    color: rgb(77, 90, 229);
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+
+
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
+}
+
+.subscribe-title {
+    margin-bottom: 16px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+    color: rgb(255, 255, 255);
+
+    @media screen and (max-width: 767px) {
+            text-align: center;
+        }
+}
+
+.subscribe-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        align-items: center;
+        gap: 24px;
+    }
+}
+
+.subscribe-input {
+    padding: 0 15px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 4px;
+
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    outline: transparent;
+    background-color: transparent;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    color: rgb(255, 255, 255);
+
+    @media screen and (min-width: 768px) {
+            width: 264px;
+        }
+}
+
+.subscribe-input:hover,
+.subscribe-input:focus {
+    border-color: rgb(49, 208, 170);
+}
+
+.input::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+.subscribe-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    line-height: 1.5;
+    cursor: pointer;
+    border: transparent;
+    border-radius: 4px;
+
+    width: 165px;
+    height: 40px;
+    margin: 0 auto;
+
+    background-color: rgb(77, 90, 229);
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    color: rgb(255, 255, 255);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* .modal-close-icon-footer {
+    margin-left: 16px;
+} */
+
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+    background-color: rgb(49, 208, 170);
+}

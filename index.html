@@ -18,23 +18,69 @@
 <body>
     <header class="main-header">
         <div class="container header-container">
-            <nav class="navigation">
-                <a class="logo-web" href="./index.html">Web<span class="logo-studio">Studio</span></a>
-                <ul class="nav-list">
-                    <li><a class="nav-link studio-link" href="./index.html">Studio</a></li>
-                    <li><a class="nav-link" href="">Portfolio</a></li>
-                    <li><a class="nav-link" href="">Contacts</a></li>
-                </ul>
-            </nav>
-            <address class="contacts">
-                <ul class="contacts-list">
-                    <li><a class="contacts-links" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li><a class="contacts-links" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
-                </ul>
-            </address>
+            <a class="logo-web" href="./index.html">Web<span class="logo-studio">Studio</span></a>
+
+            <input type="checkbox" id="menu-toggle" class="menu-toggle-input" />
+            <label for="menu-toggle" class="mobile-menu-open-btn" aria-label="Open menu">
+                <svg class="burger-image" width="24" height="24">
+                    <use href="./images/icons.svg#hamburger_menu"></use>
+                </svg>
+            </label>
+
+            <div class="mobile-menu">
+                <label for="menu-toggle" class="mobile-menu-close-btn" aria-label="Close menu">
+                    <svg class="modal-close-icon" width="8" height="8">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </label>
+                <nav class="navigation">
+                    <ul class="nav-list">
+                        <li><a class="nav-link studio-link" href="./index.html">Studio</a></li>
+                        <li><a class="nav-link" href="">Portfolio</a></li>
+                        <li><a class="nav-link" href="">Contacts</a></li>
+                    </ul>
+                </nav>
+                <div>
+                    <address class="contacts">
+                        <ul class="contacts-list">
+                            <li class="contact-item"><a class="contacts-links" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                            <li class="contact-item"><a class="contacts-links" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                        </ul>
+                    </address>
+                    <ul class="social">
+                        <li class="social-items">
+                            <a href="#" class="social-links">
+                                <svg class="team-icons" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-items">
+                            <a href="#" class="social-links">
+                                <svg class="team-icons" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-items">
+                            <a href="#" class="social-links">
+                                <svg class="team-icons" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-items">
+                            <a href="#" class="social-links">
+                                <svg class="team-icons" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
-
     <main>
         <section class="sec-back section">
             <div class="container">
@@ -101,17 +147,17 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> 
 
-        <section class="section-team section">
+        <section class="section-team">
             <div class="container">
                 <h2 class="descriptions-subtitle">Our Team</h2>
                 <ul class="team-list">
                     <li class="team-item">
                         <img class="team-images" src="./images/img_1.jpg" alt="Mark Guerrero" width="264" height="260" />
                         <div class="team-block">
-                            <h3 class="features-subtitle description">Mark Guerrero</h3>
-                            <p class="features-text description">Product Designer</p>
+                            <h3 class="team-title description">Mark Guerrero</h3>
+                            <p class="team-text description">Product Designer</p>
                             <ul class="social">
                                 <li class="social-items">
                                     <a href="#" class="social-links">
@@ -147,8 +193,8 @@
                     <li class="team-item">
                         <img class="team-images" src="./images/img_2.jpg" alt="Tom Ford" width="264" height="260" />
                         <div class="team-block">
-                            <h3 class="features-subtitle description">Tom Ford</h3>
-                            <p class="features-text description">Frontend Developer</p>
+                            <h3 class="team-title description">Tom Ford</h3>
+                            <p class="team-text description">Frontend Developer</p>
                             <ul class="social">
                                 <li class="social-items">
                                     <a href="#" class="social-links">
@@ -184,8 +230,8 @@
                     <li class="team-item ">
                         <img class="team-images" src="./images/img_3.jpg" alt="Camila Garcia" width="264" height="260" />
                         <div class="team-block">
-                            <h3 class="features-subtitle description">Camila Garcia</h3>
-                            <p class="features-text description">Marketing</p>
+                            <h3 class="team-title description">Camila Garcia</h3>
+                            <p class="team-text description">Marketing</p>
                             <ul class="social">
                                 <li class="social-items">
                                     <a href="#" class="social-links">
@@ -221,8 +267,8 @@
                     <li class="team-item">
                         <img class="team-images" src="./images/img_4.jpg" alt="Daniel Wilson" width="264" height="260" />
                         <div class="team-block">
-                            <h3 class="features-subtitle description">Daniel Wilson</h3>
-                            <p class="features-text description">UI Designer</p>
+                            <h3 class="team-title description">Daniel Wilson</h3>
+                            <p class="team-text description">UI Designer</p>
                             <ul class="social">
                                 <li class="social-items">
                                     <a href="#" class="social-links">
@@ -257,7 +303,7 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> 
 
         <section class="section">
             <div class="container">
@@ -271,8 +317,8 @@
                             </p>
                         </div>
                         <div  class="images-block">
-                            <h3 class="features-subtitle portfolio-text">Banking App</h3>
-                            <p class="features-text portfolio-text">App</p>
+                            <h3 class="features-title">Banking App</h3>
+                            <p class="portfolio-text">App</p>
                         </div>
                     </li>
                     <li class="portfolio-images">
@@ -283,8 +329,8 @@
                             </p>
                         </div>
                         <div class="images-block">
-                            <h3 class="features-subtitle portfolio-text">Cashless Payment</h3>
-                            <p class="features-text portfolio-text">Marketing</p>
+                            <h3 class="features-title">Cashless Payment</h3>
+                            <p class="portfolio-text">Marketing</p>
                         </div>
                     </li>
                     <li class="portfolio-images">
@@ -295,8 +341,8 @@
                             </p>
                         </div>
                         <div class="images-block">
-                            <h3 class="features-subtitle portfolio-text">Meditation App</h3>
-                            <p class="features-text portfolio-text">App</p>
+                            <h3 class="features-title">Meditation App</h3>
+                            <p class="portfolio-text">App</p>
                         </div>
                     </li>
                     <li class="portfolio-images">
@@ -307,8 +353,8 @@
                             </p>
                         </div>
                         <div class="images-block">
-                            <h3 class="features-subtitle portfolio-text">Taxi Service</h3>
-                            <p class="features-text portfolio-text">Marketing</p>
+                            <h3 class="features-title">Taxi Service</h3>
+                            <p class="portfolio-text">Marketing</p>
                         </div>
                     </li>
                     <li class="portfolio-images">
@@ -319,8 +365,8 @@
                             </p>
                         </div>
                         <div class="images-block">
-                            <h3 class="features-subtitle portfolio-text">Screen Illustrations</h3>
-                            <p class="features-text portfolio-text">Design</p>
+                            <h3 class="features-title">Screen Illustrations</h3>
+                            <p class="portfolio-text">Design</p>
                         </div>
                     </li>
                     <li class="portfolio-images">
@@ -331,13 +377,13 @@
                             </p>
                         </div>
                         <div class="images-block">
-                            <h3 class="features-subtitle portfolio-text">Online Courses</h3>
-                            <p class="features-text portfolio-text">Marketing</p>
+                            <h3 class="features-title">Online Courses</h3>
+                            <p class="portfolio-text">Marketing</p>
                         </div>
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> 
     </main>
 
     <footer class="low-part">
@@ -398,9 +444,9 @@
             </form>
         </div>
         </div>
-    </footer>
+    </footer> 
 
-    <div class="modal-overlay is-open">
+    <div class="modal-overlay">
         <div class="modal">
             <button class="modal-close-btn" type="button" aria-label="Close modal">
                 <svg class="modal-close-icon" width="8" height="8">
@@ -463,6 +509,6 @@
 
             </form>
         </div>
-    </div>
+    </div> 
 </body>
 </html>
